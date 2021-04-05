@@ -1,19 +1,52 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
   font-family: sans-serif;
+}
+.header , .filter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+/* Header */
+
+.header{
+   padding: 0 70px 20px;
+}
+
+/* Filter */
+
+.filter{
+  padding: 40px;
+}
+#search{
+  padding: 10px;
+  width: 20rem;
+}
+.filter .select{
+ 
+  padding: 10px;
+}
+
+
+input.icon::-webkit-input-placeholder {
+    font-family:'FontAwesome';
+    
 }
 img {
   width: 250px;
   height: 150px;
 }
+
 .Countries{
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  padding: 20px;
-  height: 50px;
+  padding: 40px;
+  
 }
+
 
 @media (min-width: 900px) {
   .Countries{
