@@ -19,18 +19,28 @@ const Countries = () => {
 
     const [search, setSearch] = useState('')
     const [filterCountries, setFilterCountries] = useState([]);
+     const [region, setRegion] = useState("");
+     
+
 useEffect(()=>{
 setFilterCountries( 
     countries.filter(country => {
-        return country.name.toLowerCase().includes( search.toLocaleLowerCase())
+        return (
+          country.name.toLowerCase().includes(search.toLocaleLowerCase()) &&
+          country.region.toLowerCase().includes(region.toLocaleLowerCase())
+        );
     } )
 )
-}, [search, countries])
+}, [search, countries, region])
 
    
     return (
       <div>
-        <Filter change={(e) => setSearch(e.target.value)} />
+        <Filter
+          change={(e) => setSearch(e.target.value)}
+          values={region}
+          onchange={(e) => setRegion(e.target.value)}
+        />
         <div className="Countries">
           {filterCountries.map((country) => {
             const {

@@ -20,7 +20,7 @@ const Filter = (props) => {
           </form>
         </div>
         <div className="region-filter">
-          <select name="select" className="select">
+          <select name="select" className="select" value={props.values} onChange={props.onchange}>
             <option value="Filter by region">Filter by region</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
