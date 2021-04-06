@@ -12,10 +12,10 @@ const Filter = (props) => {
             <input
               name="search"
               id="search"
-              className="icon"
+              className="form-control icon"
               onChange={props.change}
               placeholder="  &#xf002;      Search for a country...."
-              type="search"
+              type="text"
             />
           </form>
         </div>
