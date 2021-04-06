@@ -53,7 +53,7 @@ setFilterCountries(
             } = country;
             return (
               <article key={numericCode}>
-                <div>
+                <div className="article-element">
                   <img src={flag} alt={name} />
                   <h4>{name}</h4>
                   <h3>

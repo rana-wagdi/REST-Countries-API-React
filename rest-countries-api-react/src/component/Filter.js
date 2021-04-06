@@ -10,18 +10,23 @@ const Filter = (props) => {
         <div>
           <form>
             <input
-              type="search"
               name="search"
               id="search"
               className="icon"
               onChange={props.change}
-              placeholder="&#xf002;      Search for a country"
+              placeholder="  &#xf002;      Search for a country...."
+              type="search"
             />
           </form>
         </div>
         <div className="region-filter">
-          <select name="select" className="select" value={props.values} onChange={props.onchange}>
-            <option value="Filter by region">Filter by region</option>
+          <select
+            name="select"
+            className="select"
+            value={props.values}
+            onChange={props.onchange}
+          >
+            <option value="All">Filter by region</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
             <option value="Asia">Asia</option>
