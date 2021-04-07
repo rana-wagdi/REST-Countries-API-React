@@ -124,8 +124,8 @@ img {
     padding:  20px 0;
   }
   #search{
-    width: 100%;
-  
+    width: 90%;
+    
     margin-bottom: 20px;
   }
   .form-control{
@@ -141,7 +141,7 @@ img {
 }
 @media  (max-width: 500px) {
   .header{
-    padding: 0 10px ;
+    padding: 10px 10px ;
     
   }
   .header h2{
