@@ -20,15 +20,17 @@ body, #search, input::placeholder, .select, .article-element{
   color: ${(props) =>
     props.theme.mode === "dark" ? " hsl(0, 0%, 100%)" : "hsl(200, 15%, 8%)"};
 }
-.header, .article-element{
+.header{
   border-bottom-color: ${(props) =>
     props.theme.mode === "dark" ? "hsl(209, 23%, 22%)" : "#ded9ca"};
 }
 #search, .select, #search:focus, .select:focus, img{
   border-color: ${(props) =>
-    props.theme.mode === "dark" ? "hsl(209, 23%, 22%)" : "#ded9ca"};
-    box-shadow: ${(props) =>
-      props.theme.mode === "dark" ? "hsl(209, 23%, 22%)" : "#ded9ca"};
+    props.theme.mode === "dark" ? "hsl(209, 23%, 22%)" : "#dee3e0"};
+}
+.article-element{
+   border-color: ${(props) =>
+     props.theme.mode === "dark" ? "hsl(209, 23%, 22%)" : "#dee3e0"};
 }
 `;
 
