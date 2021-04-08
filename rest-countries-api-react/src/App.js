@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './component/Header';
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import Countries from './component/Countries';
@@ -35,13 +35,13 @@ body, #search, input::placeholder, .select, .article-element{
 `;
 
 function App() {
-  
+  const  [theme, setTheme] = useState({mode: 'dark'})
   
     return (
-      <ThemeProvider theme={{ mode: "light" }}>
+      <ThemeProvider theme={theme}>
         <div>
           <GlobalStyle />
-            <Header />
+            <Header click={e => setTheme(theme.mode === 'dark' ? {mode:'light'} : {mode:'dark'})} />
 
             <Countries />
          
