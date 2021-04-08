@@ -6,6 +6,7 @@
     text-align: center;
     width:9%;
     border-radius: 4px;
+     box-shadow: 0 5px 20px hsla(200, 15%, 8%, 0.5);
 }
 .icon{
     margin-right: 5px;
