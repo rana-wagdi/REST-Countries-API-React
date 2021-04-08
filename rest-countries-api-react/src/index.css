@@ -122,6 +122,10 @@ img {
   }
 }
 @media (max-width: 650px) {
+  .header{
+  
+    padding: 0 30px 10px;
+  }
     .filter{
     display: block;
     padding:  20px 0;
