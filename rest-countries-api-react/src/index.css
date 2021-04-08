@@ -9,10 +9,10 @@ body {
 body, img{
  background-color: hsl(207, 26%, 17%);
 }
-body, #search, input::placeholder, .select, .article-element{
+body, #search, input::placeholder, .select, .article-element, .btn{
   color: hsl(0, 0%, 100%);
 }
-.header, #search, .select, .article-element{
+.header, #search, .select, .article-element, .btn{
 background-color: hsl(209, 23%, 22%);
 }
 .header,

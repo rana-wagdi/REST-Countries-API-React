@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
+
 import Filter from './Filter';
 
 const url = "https://restcountries.eu/rest/v2/all";
@@ -54,7 +56,9 @@ setFilterCountries(
             return (
               <article key={numericCode}>
                 <div className="article-element">
-                  <img src={flag} alt={name} />
+                  <Link to={`/countries/${name}`}>
+                    <img src={flag} alt={name} />
+                  </Link>
                   <h4>{name}</h4>
                   <h3>
                     Population: <span>{population}</span>
